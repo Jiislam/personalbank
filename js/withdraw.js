@@ -25,5 +25,6 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
 
     if (newWithDrawAmount > previousBalanceTotal){
         alert('Cant withdraw more than current Balance')
-    }
+    
+    return;}
 })
