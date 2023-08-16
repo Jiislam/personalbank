@@ -22,4 +22,8 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const previousBalanceTotal= parseFloat(previousBalanceTotalString)
     const newBalanceTotal = previousBalanceTotal - newWithDrawAmount;
     balancetotalElement.innerText = newBalanceTotal;
+
+    if (newWithDrawAmount > previousBalanceTotal){
+        alert('Cant withdraw more than current Balance')
+    }
 })
